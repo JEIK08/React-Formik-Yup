@@ -27,16 +27,14 @@ export function FormComponent() {
           .required("This field is required")
       })}
       onSubmit={(data) => {
-        setTimeout(() => {
-          console.log(data);
-        }, 400);
+        console.log("onSubmit", data);
       }}
     >
       <Form>
         <label>First Name</label>
         <TextField name="firstName" />
         {/* <Field type="text" name="firstName" /> */}
-        <ErrorMessage name="firstName" />
+        {/* <ErrorMessage name="firstName" /> */}
 
         <label htmlFor="lastName">Last Name</label>
         <Field type="text" name="lastName" />
