@@ -3,6 +3,8 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { object, string } from "yup";
 
+import { TextField } from "./Fields/Text";
+
 import "./styles.scss";
 
 export function FormComponent() {
@@ -31,8 +33,9 @@ export function FormComponent() {
       }}
     >
       <Form>
-        <label htmlFor="firstName">First Name</label>
-        <Field type="text" name="firstName" />
+        <label>First Name</label>
+        <TextField name="firstName" />
+        {/* <Field type="text" name="firstName" /> */}
         <ErrorMessage name="firstName" />
 
         <label htmlFor="lastName">Last Name</label>
