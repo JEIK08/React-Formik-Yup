@@ -1,6 +1,6 @@
 import { useForm } from "./useForm";
 
-export function HookAndYup() {
+export function CustomHookAndValidations() {
   const form = useForm({
     initialValues: {
       firstName: "",

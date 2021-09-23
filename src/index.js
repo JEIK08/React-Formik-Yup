@@ -1,8 +1,8 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 
-import { Template } from "./Template";
-import { HookAndYup } from "./HookAndYup";
+// import { Template } from "./Template";
+import { CustomHookAndValidations } from "./CustomHookAndValidations";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -10,7 +10,7 @@ ReactDOM.render(
     <div>
       {/* <Template /> */}
       <div style={{ marginBottom: "30px" }} />
-      <HookAndYup />
+      <CustomHookAndValidations />
     </div>
   </StrictMode>,
   rootElement
