@@ -1,16 +1,14 @@
-import { StrictMode } from "react";
 import ReactDOM from "react-dom";
+import { StrictMode } from "react";
 
-// import { Template } from "./Template";
-import { CustomHookAndValidations } from "./CustomHookAndValidations";
+import { FormComponent } from "./FormComponent";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
     <div>
-      {/* <Template /> */}
       <div style={{ marginBottom: "30px" }} />
-      <CustomHookAndValidations />
+      <FormComponent />
     </div>
   </StrictMode>,
   rootElement
